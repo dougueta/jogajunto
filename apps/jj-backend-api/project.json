@@ -1,0 +1,24 @@
+{
+  "name": "jj-backend-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/jj-backend-api/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "jj-backend-api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "jj-backend-api:build:development"
+        },
+        "production": {
+          "buildTarget": "jj-backend-api:build:production"
+        }
+      }
+    }
+  }
+}
