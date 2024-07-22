@@ -11,7 +11,7 @@ import PlayerForm from 'components/PlayerForm';
 import Logo from 'assets/logo';
 
 const Home = () => {
-  const navigate = useNavigate();
+  const navigatesss = useNavigate();
   // const handleClick = () => navigate(routes.players)
   const formInitialValues = {
     firstName: '',
